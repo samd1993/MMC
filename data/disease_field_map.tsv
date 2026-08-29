@@ -1,0 +1,570 @@
+record_id	tier	accession_codes	disease_field	disease_field_source	disease_field_is_free_text	disease_group	healthy_cohort
+MMC2-00037	1	PRJEB10878; PRJEB6070; PRJNA429097	Diagnosis	disease_key		Cancer	
+MMC2-00038	1	DRA006684; DRA007281; DRA008156; DRA008243	host_disease_stat	disease_key		Cancer	
+MMC2-00047	1	PRJNA397867; PRJNA412846	sample_title; under	reviewer_note	yes	Cancer	
+MMC2-00067	1	CRA028528; DRA006684; DRA008156	host_disease_stat	disease_key		Cancer	
+MMC2-00139	1	PRJEB4336; PRJEB6070	Diagnosis	disease_key		Cancer	
+MMC2-00150	1	PRJEB42371	perio_3_categories; perio_4_categories	reviewer_note		Cancer	
+MMC2-00197	1	PRJEB35526; PRJNA1226574; PRJNA421352; PRJNA533024	Condition; host_phenotype	disease_key		Cancer	
+MMC2-00200	1	PRJEB36789	sample_type	reviewer_note		Cancer	
+MMC2-00203	1	PRJEB37635	Colonoscopy_status	disease_key		Cancer	
+MMC2-00214	1	PRJEB47197; PRJEB57580	tissue_type	reviewer_note		Cancer	
+MMC2-00215	1	PRJEB4953	sample_title; tissue	reviewer_note	yes	Cancer	
+MMC2-00216	1	PRJEB5069	sample_title	reviewer_note	yes	Cancer	
+MMC2-00225	1	PRJEB6070	Diagnosis	disease_key		Cancer	
+MMC2-00274	1	PRJNA1061213	sample_description; tissue	reviewer_note	yes	Cancer	
+MMC2-00299	1	PRJNA1104398	Experiment Title; experiment_title; Sample Alias; sample_alias; Experiment	reviewer_note	yes	Cancer	yes
+MMC2-00307	1	PRJNA1121599	disease	disease_key		Cancer	
+MMC2-00311	1	PRJNA1127013	isolate	reviewer_note		Cancer	
+MMC2-00332	1	PRJNA1158838	host_disease; host_tissue_sampled	reviewer_note		Cancer	
+MMC2-00387	1	PRJNA310127	isolation_source	reviewer_note	yes	Cancer	
+MMC2-00398	1	PRJNA374847	env_feature	reviewer_note		Respiratory	
+MMC2-00404	1	PRJNA411831	CANCER_TYPE	disease_key		Cancer	
+MMC2-00427	1	PRJNA541981	stage; immunotherapy	reviewer_note		Cancer	
+MMC2-00438	1	PRJNA575620	sample_description	reviewer_note	yes	Cancer	
+MMC2-00458	1	PRJNA632856	tissue; sample_type	reviewer_note		Cancer	yes
+MMC2-00477	1	PRJNA678287	Disease_status; isolate	reviewer_note		Cancer	
+MMC2-00496	1	PRJNA731589; PRJNA763023	experiment_title	reviewer_note	yes	Cancer	yes
+MMC2-00549	1	PRJNA810087	crc_subtype; recur_aden_t1; recur_aden_type	reviewer_note		Cancer	
+MMC2-00557	1	PRJNA843054	sample_alias; isolate	reviewer_note	yes	Healthy	yes
+MMC2-00559	1	PRJNA846182	Head and neck cancer	disease_key		Cancer	
+MMC2-00579	1	PRJNA880301	host disease group	disease_key		Cancer	
+MMC2-00642	1	PRJNA278076	host_disease	disease_key		Cancer	
+MMC2-00940	1		host_disease	disease_key		Cancer	
+MMC2-01397	1		host_disease; alcohol_drinking_status; smoking_status	disease_key		Cancer	
+MMC2-01411	1	DRA006684; DRA008156	host_disease_stat	disease_key		Cancer	
+MMC2-01414	1	PRJNA870048	host_disease	disease_key		Cancer	
+MMC2-01621	1		gastrointestinal tract disorder; host disease status; liver disorder	disease_key		Cancer	
+MMC2-01634	1	PRJNA832909	host_disease	disease_key		Cancer	
+MMC2-02018	1	DRA012575	host_disease_stat	disease_key		Oral	
+MMC2-02184	1	PRJNA486009	gastrointest_disord	reviewer_note		Gastrointestinal	
+MMC2-02206	1	PRJNA428477; PRJNA485316	cre_status; screenPCRresult; KPCKp_bacteremia	reviewer_note		Respiratory	
+MMC2-02209	1	PRJNA487636	Diagnosis	disease_key		Gastrointestinal	
+MMC2-02221	1	PRJEB23239	Anemia	reviewer_note		Infectious	
+MMC2-02227	1	DRA006313	host_disease_stat	disease_key		Infectious	
+MMC2-02240	1	DRA005698	host_disease_stat	disease_key		Gastrointestinal	
+MMC2-02284	1	ERS725509; ERS725741	Group	disease_key		Cardiovascular	
+MMC2-02309	1	PRJNA233597	disease	disease_key		Infectious	
+MMC2-02579	1		disease	disease_key		Infectious	
+MMC2-02603	1	PRJNA866487	env_local_scale	reviewer_note		Oral	
+MMC2-02670	1	PRJEB11512	sample_description; population	reviewer_note	yes	Healthy	yes
+MMC2-02675	1	PRJEB14674	parkinson_disease	disease_key		Neurodegenerative	
+MMC2-02691	1	PRJEB99111	disease_course	disease_key		Neurodegenerative	
+MMC2-02720	1	GSE144792; PRJEB36585	comparison_group	disease_key		Infectious	
+MMC2-02743	1	PRJEB82425	sample_description	reviewer_note	yes	Respiratory	
+MMC2-02784	1	PRJEB1046; PRJEB674; PRJNA521455	Schisto status	disease_key		Infectious	
+MMC2-02791	1	PRJNA734860	Diabetes_status	disease_key		Metabolic	
+MMC2-02945	1	PRJEB28543	host disease status	disease_key		Infectious	
+MMC2-02971	1	PRJEB31817	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-02988	1	PRJEB33360	sample_description	reviewer_note	yes	Infectious	
+MMC2-03067	1	PRJEB39610	Nec:	disease_key		Gastrointestinal	
+MMC2-03081	1	PRJEB41059	Lung/pulmonary Disorder:	disease_key		Respiratory	
+MMC2-03092	1	PRJEB42151; PRJEB42155	diagnosis; disease_duration	disease_key		Gastrointestinal	
+MMC2-03093	1	PRJEB42155	diagnosis	disease_key		Gastrointestinal	
+MMC2-03114	1	PRJEB44440; PRJEB47161; PRJEB47162; PRJEB77933	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-03115	1	PRJEB44440; PRJEB47162	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-03137	1	PRJEB47047; PRJEB61516	Skin:	disease_key		Immune Complications	
+MMC2-03222	1	PRJEB55787	active uveitis	disease_key		Gastrointestinal	
+MMC2-03242	1	PRJEB58436; PRJNA417579	Cardiometabolic_status	disease_key		Metabolic	
+MMC2-03248	1	PRJEB59350; PRJNA834801	Case_status	disease_key		Neurodegenerative	
+MMC2-03262	1	PRJEB62577; PRJEB62655	emp_status	disease_key		Healthy	yes
+MMC2-03277	1	PRJEB6456; PRJNA475246; PRJNA486782; PRJNA510445; PRJNA521878; PRJNA630999; PRJNA698986	health_state	disease_key		Healthy	yes
+MMC2-03322	1	PRJEB75958	host disease status	disease_key		Infectious	
+MMC2-03403	1	PRJNA1011244	disease	disease_key		Autoimmune	
+MMC2-03412	1	PRJNA1014361	sample_description	reviewer_note	yes	Respiratory	
+MMC2-03495	1	PRJNA1053656	Disease_Group	disease_key		Gastrointestinal	
+MMC2-03512	1	PRJNA1062161	group	disease_key		Oral	
+MMC2-03513	1	PRJNA1062375	disease	disease_key		Gastrointestinal	
+MMC2-03555	1	PRJNA1080555	disease	disease_key		Respiratory	
+MMC2-03588	1	PRJNA1091054; PRJNA432821	sample_alias	reviewer_note	yes	Anatomical	
+MMC2-03645	1	PRJNA1125836; PRJNA885289	host_disease	disease_key		Metabolic	
+MMC2-03661	1	PRJNA1133091	disease	disease_key		Neurological	
+MMC2-03666	1	PRJNA1134913	disease	disease_key		Infectious	
+MMC2-03686	1	PRJNA1148144	host_group	disease_key		Infectious	
+MMC2-03704	1	PRJNA1161359; PRJNA1161376	host_disease; host_phenotype	disease_key		Genetic	
+MMC2-03712	1	PRJNA1164710	sample_alias	reviewer_note	yes	Healthy	yes
+MMC2-03713	1	PRJNA1164942	health_state	disease_key		Healthy	yes
+MMC2-03718	1	PRJNA1169537; PRJNA832909	host_disease	disease_key		Gastrointestinal	
+MMC2-03725	1	PRJNA1174175; PRJNA1174683; PRJNA1174709	disease	disease_key		Cardiovascular	
+MMC2-03726	1	PRJNA1174709	disease	disease_key		Cardiovascular	
+MMC2-03808	1	PRJNA1216747; PRJNA1216770	Diagnosis	disease_key		Cancer	
+MMC2-03834	1	PRJNA1241201; PRJNA1250964	CD_disease_presentation	disease_key		Gastrointestinal	
+MMC2-03848	1	PRJNA1249468	sample_alias	reviewer_note	yes	Renal	
+MMC2-03859	1	PRJNA1262707	disease	disease_key		Gastrointestinal	
+MMC2-03865	1	PRJNA1265957	Baseline_VAD_status	disease_key		Healthy	yes
+MMC2-03891	1	PRJNA1295194	Group	disease_key		Metabolic	
+MMC2-03903	1	PRJNA1337180	sample_title	reviewer_note	yes	Cancer	
+MMC2-03921	1	PRJNA240658	sample_description	reviewer_note	yes	Cancer	
+MMC2-03944	1	PRJNA280490; PRJNA379123	host_disease	reviewer_note		Healthy	yes
+MMC2-03985	1	PRJNA307992	host_disease	disease_key		Infectious	
+MMC2-04014	1	PRJNA328258; PRJNA606577	NAFLD	reviewer_note		Metabolic	
+MMC2-04022	1	PRJNA247489; PRJNA340060; PRJNA724686	score	reviewer_note		Neurological	
+MMC2-04064	1	PRJNA384621	host_disease	disease_key		Infectious	
+MMC2-04078	1	PRJNA391149	host_disease	disease_key		Gastrointestinal	
+MMC2-04102	1	PRJNA412738	phenotype	disease_key		Respiratory	
+MMC2-04109	1	PRJNA415692	sample_description	reviewer_note	yes	Infectious	
+MMC2-04149	1	PRJNA450340	host_disease	disease_key		Gastrointestinal	
+MMC2-04178	1	PRJNA482656	cancer; cancer_treatment; cardiovascular_disease; clinical_condition; covid_chronic_conditions_heart_disease__myocardial_infarction; covid_chronic_conditions_heart_problems; covid_chronic_conditions_immune_disorder; covid_chronic_conditions_seasonal_allergies; covid_likely_exposure_yes_someone_with_medical_diagnosis_but_no_test; epilepsy_or_seizure_disorder; ibd_diagnosis_refined; kidney_disease; liver_disease; lung_disease; mental_illness; mental_illness_type_bipolar_disorder; mental_illness_type_depression; mental_illness_type_ptsd_post_traumatic_stress_disorder; mental_illness_type_ptsd_posttraumatic_stress_disorder; mental_illness_type_substance_abuse; mental_illness_type_unspecified; skin_condition; subset_healthy	disease_key		Healthy	yes
+MMC2-04241	1	PRJNA517994; PRJNA525701	host_disease	disease_key		Liver	
+MMC2-04253	1	PRJNA525566	group	disease_key		Infectious	
+MMC2-04311	1	PRJNA550537; PRJNA552657	disease	disease_key		Gastrointestinal	
+MMC2-04314	1	PRJNA554461	clinical_classification	disease_key		Respiratory	
+MMC2-04315	1	PRJNA554461; PRJNA595346; PRJNA726955; PRJNA940725; PRJNA976404	clinical_classification	disease_key		Respiratory	
+MMC2-04322	1	PRJNA556249; PRJNA631262	swab_status	disease_key		Respiratory	
+MMC2-04386	1	PRJNA598446; PRJNA687957	disease	disease_key		Autoimmune	
+MMC2-04387	1	PRJNA599016	host_disease	disease_key		Respiratory	
+MMC2-04414	1	PRJNA610934	host_disease	disease_key		Gastrointestinal	
+MMC2-04429	1	PRJNA615162	disease_sub	disease_key		Gastrointestinal	
+MMC2-04438	1	GSE147964; PRJNA622267	host_disease	disease_key		Respiratory	
+MMC2-04481	1	PRJNA637785	treatment_group	disease_key		Metabolic	
+MMC2-04693	1	PRJNA719138	diabetes_status	disease_key		Metabolic	
+MMC2-04695	1	PRJNA720045	Condition	disease_key		Respiratory	
+MMC2-04701	1	PRJNA721617	host_disease; sample_alias	reviewer_note	yes	Immune Complications	yes
+MMC2-04715	1	PRJNA727842	Nutritional_Status	disease_key		Metabolic	
+MMC2-04756	1	PRJNA743650; PRJNA759070	sample_alias	reviewer_note	yes	Cancer	
+MMC2-04761	1	PRJNA746094	host_disease	disease_key		Mental Health	
+MMC2-04793	1	PRJNA755856	host_phenotype	disease_key		Neurological	
+MMC2-04799	1	PRJNA757573	Crohn's disease behaviour	disease_key		Gastrointestinal	
+MMC2-04829	1	PRJNA766410	disease	disease_key		Metabolic	
+MMC2-04850	1	PRJNA775883	disease_stage	disease_key		Metabolic	
+MMC2-04907	1	PRJNA797231	sample_alias	reviewer_note	yes	Infectious	
+MMC2-04912	1	PRJNA798786	INFECTIOUS _DISEASES	disease_key		Healthy	yes
+MMC2-04932	1	PRJNA803810	sample_alias	reviewer_note	yes	Cancer	
+MMC2-04982	1	PRJNA820972	host_disease	disease_key		Respiratory	
+MMC2-04986	1	PRJNA823864	health_state	disease_key		Metabolic	
+MMC2-05015	1	PRJNA836180	Group	disease_key		Healthy	yes
+MMC2-05116	1	PRJNA881922	host_disease	disease_key		Metabolic	
+MMC2-05198	1	PRJNA913857	state	reviewer_note		Respiratory	
+MMC2-05220	1	PRJNA928241	host_disease	disease_key		Mental Health	
+MMC2-05271	1	PRJNA945212	health_state	disease_key		Metabolic	
+MMC2-05288	1	PRJNA950198	NAMED_IN_NOTE_UNPARSED	reviewer_note		Respiratory	
+MMC2-05306	1	PRJNA957107	disease	disease_key		Autoimmine	
+MMC2-05357	1	PRJNA991428	years since diagnosis	disease_key		Gastrointestinal	
+MMC2-05398	1	PRJNA246121	disease	disease_key		Liver	
+MMC2-05419	1	PRJNA278873	nfection_outcome	reviewer_note		Infectious	
+MMC2-05430	1	PRJNA290926	diagnosis	disease_key		Metabolic	
+MMC2-05435	1	PRJNA297252	STATUS	disease_key		Gastrointestinal	
+MMC2-05466	1	PRJNA330897	Study_HIVStatus:	disease_key		STI	
+MMC2-05471	1	PRJNA342486	host_disease	disease_key		Healthy	yes
+MMC2-05506	1	PRJNA421952	Disease status	disease_key		Oral	
+MMC2-05520	1	PRJNA450843	disease	disease_key		Infectious	
+MMC2-05575	1	PRJNA962059	OverallGroup:	disease_key		Neurodegenerative	
+MMC2-05906	1	PRJNA795467	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-06291	1	DRA011218; PRJDB10871	host_disease_stat	disease_key		Gastrointestinal	
+MMC2-07830	1	PRJNA926960; PRJNA928388	sample_alias	reviewer_note	yes	Renal	
+MMC2-08483	1	PRJNA1176379	host_disease	disease_key		Oral	
+MMC2-08593	1	PRJNA438847	host_phenotype	disease_key		Respiratory	
+MMC2-09254	1	PRJNA408073	health_state	disease_key		Metabolic	
+MMC2-09276	1	ERS3379832; ERS3380418; PRJEB31817	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-09324	1	10.5281/ZENODO.12909008; PRJNA1091815	host_disease	disease_key		Oral	
+MMC2-09404	1	PRJNA911564	study_group	disease_key		Respiratory	
+MMC2-09639	1	PRJNA1148754	host_phenotype	disease_key		Oral	
+MMC2-09735	1	PRJNA579996	host_disease	disease_key		Metabolic	
+MMC2-09747	1	PRJEB59450	cancer_in_past	disease_key		Anatomical	
+MMC2-10254	1		Cardiometabolic_status	disease_key		Metabolic	
+MMC2-10490	1	PRJEB27216	host disease status	disease_key		Cancer	
+MMC2-10547	1		Mortality_status	disease_key		Respiratory	
+MMC2-10561	1	10.5281/ZENODO.7183678; PRJEB53401; PRJEB53403	donor_group	disease_key		Neurodegenerative	
+MMC2-10637	1		host_disease	disease_key		Oral	
+MMC2-10669	1	PRJNA307231	HIV_Profile:	disease_key		Infectious	
+MMC2-10741	1		case_control_group	disease_key		Metabolic	
+MMC2-10916	1	SRA045646; SRA050230	sample_title	reviewer_note	yes	Metabolic	
+MMC2-11206	1	PRJEB47047	severity	reviewer_note		Reproductive	
+MMC2-11252	1	PRJNA316126; PRJNA539959; PRJNA548310	Host_disease_status; host_disease	disease_key		Respiratory	
+MMC2-12620	1	PRJNA836344	sample_description	reviewer_note	yes	Reproductive	
+MMC2-12782	1	GSE86491; PRJEB14941; PRJEB16013; PRJEB24147; PRJNA295859; PRJNA481576; PRJNA547595; PRJNA737052	nourishment_status_group; primary_pathology	disease_key		Immune Complications	
+MMC2-ADD-001	1	PRJEB11419	skin_condition	disease_key		Healthy	yes
+MMC2-00101	2	DRA017480	sample_title	reviewer_note	yes	Cancer	
+MMC2-00138	2	PRJEB1415	sample_description	reviewer_note	yes	Cancer	
+MMC2-00158	2	PRJDB12280	sample_name	reviewer_note	yes	Oral	
+MMC2-00175	2	PRJEB13249	tissue	reviewer_note		Cancer	yes
+MMC2-00179	2	PRJEB18476	host disease status	disease_key		Cancer	
+MMC2-00180	2	PRJEB21104	treatment	reviewer_note		Cancer	
+MMC2-00186	2	PRJEB26931; PRJNA375772	sample_alias	reviewer_note	yes	Cancer	
+MMC2-00195	2	PRJEB34333	sample_description	reviewer_note	yes	Cancer	
+MMC2-00213	2	PRJEB46474	sample_description	reviewer_note	yes	Cancer	
+MMC2-00220	2	PRJEB54599	chemotherapy	reviewer_note		Cancer	
+MMC2-00227	2	PRJEB63351	sample_title	reviewer_note	yes	Cancer	
+MMC2-00243	2	PRJNA1011235	sample_description	reviewer_note	yes	Cancer	
+MMC2-00247	2	PRJNA1023304	tissue; env_medium	reviewer_note		Cancer	
+MMC2-00253	2	PRJNA1029974	Serrated_polyposis_syndrome	reviewer_note		Cancer	
+MMC2-00280	2	PRJNA1068138	CASECTL2; advanced.case; large_adenoma2	reviewer_note		Cancer	
+MMC2-00286	2	PRJNA1085029	Sample Alias; sample_alias; isolate	reviewer_note	yes	Cancer	
+MMC2-00320	2	PRJNA1136994	Cohort	reviewer_note		Cancer	
+MMC2-00343	2	PRJNA1197483	sample_alias; env_medium	reviewer_note	yes	Cancer	
+MMC2-00349	2	PRJNA1212478	sample_title	reviewer_note	yes	Cancer	
+MMC2-00354	2	PRJNA1221641	host_disease	reviewer_note		Cancer	
+MMC2-00361	2	PRJNA1244248	library_name	reviewer_note	yes	Cancer	
+MMC2-00376	2	PRJNA1347852	Experiment Title; experiment_title; Sample Alias; sample_alias; Experiment	reviewer_note	yes	Cancer	yes
+MMC2-00377	2	PRJNA257960	isolate,; isolate	reviewer_note		Cancer	
+MMC2-00381	2	PRJNA280026	sample_description	reviewer_note	yes	Cancer	
+MMC2-00397	2	PRJNA352375	Sample Alias; sample_alias	reviewer_note	yes	Cancer	
+MMC2-00401	2	PRJNA389927	DiseaseClass	disease_key		Cancer	
+MMC2-00409	2	PRJNA448161	gynecologic_disord	reviewer_note		Cancer	
+MMC2-00423	2	PRJNA533024	Sample Title; sample_title; env_local_scale	reviewer_note	yes	Cancer	
+MMC2-00426	2	E-MTAB-7915; PRJNA533720	sample_alias; library_name	reviewer_note	yes	Cancer	
+MMC2-00429	2	PRJNA542615	Survival Status	disease_key		Cancer	
+MMC2-00431	2	PRJNA549488	CaseControl	reviewer_note		Cancer	
+MMC2-00434	2	PRJNA559766	sample_description	reviewer_note	yes	Cancer	
+MMC2-00464	2	PRJNA650259	sample_description; chemotherapy_type	reviewer_note	yes	Cancer	yes
+MMC2-00467	2	PRJNA658160	case_control; CONSENSUS_DIAG	reviewer_note		Cancer	
+MMC2-00486	2	PRJNA707099	disease	disease_key		Cancer	
+MMC2-00498	2	PRJNA733573	sample_alias	reviewer_note	yes	Cancer	
+MMC2-00500	2	PRJNA736583	sample_title	reviewer_note	yes	Cancer	
+MMC2-00505	2	PRJNA743150	isolate; tissue	reviewer_note		Cancer	
+MMC2-00516	2	PRJNA763023	sample_alias; experiment_title	reviewer_note	yes	Cancer	
+MMC2-00523	2	PRJNA767189	case_control; sample_type; CONSENSUS_DIAG	reviewer_note		Cancer	
+MMC2-00525	2	PRJNA767860	host_disease	disease_key		Cancer	
+MMC2-00530	2	GSE189642; PRJNA781360; PRJNA781368	tissue; env_medium; explored	reviewer_note		Cancer	
+MMC2-00553	2	PRJNA813705	host_disease	disease_key		Cancer	
+MMC2-00565	2	PRJNA854790	host_disease	reviewer_note		Cancer	
+MMC2-00605	2	PRJNA914231	gynecologic_disord	reviewer_note		Cancer	
+MMC2-00613	2	PRJNA940282	sample_alias; sample_description	reviewer_note	yes	Cancer	
+MMC2-00614	2	PRJNA941834	tissue; env_local_scale	reviewer_note		Cancer	yes
+MMC2-00638	2	SRP009633	sample_description	reviewer_note	yes	Cancer	
+MMC2-00653	2	PRJNA314877	health_state	disease_key		Cancer	
+MMC2-00673	2	PRJNA451154	experiment_title	reviewer_note	yes	Cancer	
+MMC2-00677	2	PRJNA488230	sample_alias	reviewer_note	yes	Cancer	
+MMC2-00680	2	PRJNA595787	sample_alias; sample_description	reviewer_note	yes	Cancer	
+MMC2-01219	2	PRJNA575808	sample_title; sample_description	reviewer_note	yes	Cancer	
+MMC2-01241	2		host_disease	disease_key		Cancer	
+MMC2-01429	2		sample_alias	reviewer_note	yes	Cancer	
+MMC2-01432	2		sample_alias	reviewer_note	yes	Cancer	
+MMC2-01445	2		sample_description	reviewer_note	yes	Gastrointestinal	
+MMC2-01471	2		sample_title	reviewer_note	yes	Cancer	
+MMC2-01501	2		sample_alias	reviewer_note	yes	Cancer	
+MMC2-01516	2		host_disease	disease_key		Cancer	
+MMC2-01519	2		Is Tumor:	disease_key		Cancer	
+MMC2-01548	2		dermatology disorder; earlier parapsoriasis diagnoses; host disease status;	disease_key		Skin	
+MMC2-01562	2		host disease status: ;group	disease_key		Cancer	
+MMC2-01583	2		host_disease	disease_key		Cancer	
+MMC2-01603	2		primary tumor:	disease_key		Cancer	
+MMC2-01890	2	PRJEB72778; PRJEB72779	sample_title	reviewer_note	yes	Cancer	
+MMC2-01968	2	PRJEB18720	hpv_status_at_follow_up	reviewer_note		Cancer	
+MMC2-02003	2	PRJNA788785	pulmonary_disord; timepoint	reviewer_note		Immune Complications	
+MMC2-02043	2	DRA013989	sample_title; host_disease	reviewer_note	yes	Healthy	yes
+MMC2-02103	2	DRA002611; DRA002617; DRA002618; DRA011285; DRA011286	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-02143	2	DRA009950	host_disease_stat	disease_key		Metabolic	
+MMC2-02145	2	PRJNA424567	host_disease; Disease	reviewer_note		Reproductive	
+MMC2-02160	2		Disease; Group	disease_key		Gastrointestinal	
+MMC2-02187	2	DRA006094	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-02228	2	SRR6872880; SRR6872883; SRR6872887; SRR6872896	sample_name	reviewer_note	yes	Infectious	
+MMC2-02229	2	SRA759603	host	reviewer_note		Metabolic	
+MMC2-02241	2	PRJNA378267	AUD	reviewer_note		Respiratory	
+MMC2-02279	2	PRJNA298762	sample_description	reviewer_note	yes	Gastrointestinal	
+MMC2-02283	2	PHS000265.V3.P1; SRA054875	sample_description	reviewer_note	yes	Gastrointestinal	yes
+MMC2-02316	2	PRJNA200702	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-02326	2	SRA057249	disease	reviewer_note		Respiratory	
+MMC2-02350	2	SRA049741	Disease	disease_key		Liver	
+MMC2-02360	2	SRA059451	sample_title	reviewer_note	yes	Cardiovascular	
+MMC2-02368	2	SRP009299	diseased area of diseased individual	reviewer_note		Oral	
+MMC2-02458	2	PRJNA1027311	host_disease	disease_key		Gastrointestinal	
+MMC2-02526	2	DRA015691	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-02533	2	PRJNA246158; PRJNA615630; PRJNA865783	RAS_like_opacities	reviewer_note		Immune Complications	
+MMC2-02638	2	PRJEB3251	gastrointest_disord	reviewer_note		Gastrointestinal	
+MMC2-02656	2	PRJEB6337; PRJNA375935	env_feature	reviewer_note		Gastrointestinal	yes
+MMC2-02692	2	PRJEB22303	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-02710	2	PRJEB29078	sample_description	reviewer_note	yes	Metabolic	
+MMC2-02722	2	PRJEB38352	disease	disease_key		Gastrointestinal	
+MMC2-02724	2	PRJEB38909	has HIV biomarkers	disease_key		STI	
+MMC2-02753	2	PRJDB11117	sample_title	reviewer_note	yes	Respiratory	
+MMC2-02832	2	PRJEB14948; PRJNA50563	sample_title	reviewer_note	yes	Infectious	
+MMC2-02844	2	PRJEB18478	lung/pulmory disorder	disease_key		Respiratory	
+MMC2-02879	2	PRJEB23057; PRJNA745169	host_disease	disease_key		Respiratory	
+MMC2-02883	2	PRJEB23313	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-02896	2	PRJEB25060	sample_title	reviewer_note	yes	Healthy	yes
+MMC2-02907	2	GSE114398; PRJEB25915	host_phenotype	disease_key		Respiratory	
+MMC2-02929	2	PRJEB27564	Parkinson:	disease_key		Neurodegenerative	
+MMC2-02930	2	PRJEB27623	present	reviewer_note		Gastrointestinal	
+MMC2-02935	2	PRJEB28159	burden group for campylobacter	disease_key		Gastrointestinal	
+MMC2-02940	2	PRJEB28384	sample_alias	reviewer_note	yes	Cardiovascular	
+MMC2-02974	2	PRJEB32077	sample_description	reviewer_note	yes	Infectious	
+MMC2-02975	2	PRJEB32265	sample_description	reviewer_note	yes	Immune Complications	
+MMC2-03009	2	PRJEB35283	sample_description	reviewer_note	yes	Infectious	
+MMC2-03012	2	PRJEB35666	sample_description	reviewer_note	yes	Metabolic	
+MMC2-03029	2	PRJEB36332	sample_title	reviewer_note	yes	Autoimmune	
+MMC2-03049	2	PRJEB38221	sample_description	reviewer_note	yes	Respiratory	
+MMC2-03063	2	PRJEB39311	sample_alias	reviewer_note	yes	Infectious	
+MMC2-03065	2	PRJEB39484	sample_title	reviewer_note	yes	Metabolic	
+MMC2-03066	2	PRJEB39500	sample_description	reviewer_note	yes	Metabolic	
+MMC2-03074	2	PRJEB40590	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-03125	2	PRJEB4555	disease	disease_key		Respiratory	
+MMC2-03131	2	PRJEB46105	sample_alias	reviewer_note	yes	Skin	
+MMC2-03236	2	PRJEB57770	sample_title	reviewer_note	yes	Infectious	
+MMC2-03256	2	PRJEB61078	sample_description	reviewer_note	yes	Respiratory	
+MMC2-03259	2	PRJEB62005	sample_description	reviewer_note	yes	Infectious	
+MMC2-03263	2	PRJEB62780	host_status	disease_key		Respiratory	
+MMC2-03291	2	PRJEB67373	sample_description; sample_title	reviewer_note	yes	Renal	
+MMC2-03312	2	PRJEB72371	sample_description	reviewer_note	yes	Gastrointestinal	
+MMC2-03325	2	PRJEB76903	host disease status	disease_key		Oral	
+MMC2-03330	2	PRJEB77861	sample_title	reviewer_note	yes	Cardiovascular	
+MMC2-03332	2	PRJEB78556	sample_description	reviewer_note	yes	Immune Complications	
+MMC2-03378	2	PRJEB98644	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-03380	2	PRJNA100021; PRJNA996776	sample_alias	reviewer_note	yes	Healthy	yes
+MMC2-03419	2	PRJNA1015704	sample_description	reviewer_note	yes	Respiratory	
+MMC2-03436	2	PRJNA1024934	sample_description	reviewer_note	yes	Reproductive	
+MMC2-03466	2	PRJNA1043868	sample_alias	reviewer_note	yes	Endocrine	
+MMC2-03470	2	PRJNA1045644	host_disease	disease_key		Respiratory	
+MMC2-03484	2	PRJNA1049117	sample_alias	reviewer_note	yes	Oral	
+MMC2-03496	2	PRJNA1053658	host_disease	disease_key		Gastrointestinal	
+MMC2-03505	2	PRJNA1058141	sample_description	reviewer_note	yes	Autoimmune	
+MMC2-03519	2	PRJNA1064480	sample_description	reviewer_note	yes	Skin	
+MMC2-03531	2	PRJNA1068750	sample_title	reviewer_note	yes	Cancer	
+MMC2-03548	2	PRJNA1078389	host_disease	disease_key		Respiratory	
+MMC2-03549	2	PRJNA1078442	isolate	reviewer_note		Infectious	
+MMC2-03556	2	PRJNA1080886	sample_title	reviewer_note	yes	Oral	
+MMC2-03566	2	PRJNA1083899	sample_title	reviewer_note	yes	Respiratory	
+MMC2-03576	2	PRJNA1088546	sample_id	reviewer_note	yes	Infectious	
+MMC2-03619	2	PRJNA1104421	experiment_title	reviewer_note	yes	Liver	
+MMC2-03624	2	PRJNA1109848	sample_cog_status	disease_key	yes	Neurodegenerative	
+MMC2-03626	2	PRJNA1112760	is_healthy	disease_key		Respiratory	
+MMC2-03631	2	PRJNA1114418	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-03646	2	PRJNA1126338	sample_alias	reviewer_note	yes	Metabolic	
+MMC2-03648	2	PRJNA1127788	sample_alias	reviewer_note	yes	Reproductive	
+MMC2-03663	2	PRJNA1134172	sample_title	reviewer_note	yes	Respiratory	
+MMC2-03670	2	PRJNA1137103	host_disease	disease_key		Reproductive	
+MMC2-03682	2	PRJNA1144689	experiment_title	reviewer_note	yes	Healthy	yes
+MMC2-03693	2	PRJNA1152299	sample_alias	reviewer_note	yes	Liver	
+MMC2-03699	2	PRJNA1159478	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-03707	2	PRJNA1162807	host_disease	disease_key		Respiratory	
+MMC2-03709	2	PRJNA1163353	sample_alias	reviewer_note	yes	Infectious	
+MMC2-03717	2	PRJNA1167913; PRJNA450025; PRJNA673102	sample_description; HIV_Non_NAFLD	reviewer_note	yes	Metabolic	
+MMC2-03720	2	PRJNA1170177	sample_title; JL_filarial_lymphedema_Patient4; sample_title.	reviewer_note	yes	Infectious	
+MMC2-03737	2	PRJNA1180074	sample_title	reviewer_note	yes	Metabolic	
+MMC2-03766	2	PRJNA1194543	Infection status	disease_key		Liver	
+MMC2-03782	2	PRJNA1202695	library_name	reviewer_note	yes	Metabolic	
+MMC2-03783	2	PRJNA1203401	sample_title	reviewer_note	yes	Metabolic	
+MMC2-03786	2	GSE285935; PRJNA1207020	sample_title	reviewer_note	yes	Autoimmune	
+MMC2-03793	2	PRJNA1208993	Disord	reviewer_note		Liver	
+MMC2-03807	2	PRJNA1216257	sample_alias	reviewer_note	yes	Infectious	
+MMC2-03819	2	PRJNA1225217	library_name; run_alias	reviewer_note	yes	STI	
+MMC2-03837	2	PRJNA1242794	experiment_title	reviewer_note	yes	Gastrointestinal	yes
+MMC2-03850	2	PRJNA1252380	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-03860	2	PRJNA1262893	experiment_title	reviewer_note	yes	Metabolic	
+MMC2-03881	2	PRJNA1277165	sample_alias	reviewer_note	yes	Infectious	
+MMC2-03883	2	PRJNA1279610	host_phenotype	disease_key		Mental Health	
+MMC2-03915	2	PRJNA2282203; PRJNA282013	host_disease	disease_key		Gastrointestinal	
+MMC2-03918	2	PRJNA234437	host_disease	disease_key		Respiratory	
+MMC2-03919	2	PRJNA234437; PRJNA285808	host_disease	disease_key		Infectious	
+MMC2-03931	2	PRJNA264177	host_phenotype	disease_key		Gastrointestinal	
+MMC2-03934	2	PRJNA268708	sample_description; sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-03937	2	PRJNA271791	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-03942	2	PRJNA276631	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-03954	2	PRJNA290729	sample_description	reviewer_note	yes	Metabolic	
+MMC2-03989	2	PRJNA31257; PRJNA397112; PRJNA398089; PRJNA559898; PRJNA644666	host_disease	disease_key		Healthy	yes
+MMC2-04001	2	GSE81279; PRJNA321051	host_phenotype	disease_key		Neurodegenerative	
+MMC2-04049	2	PRJNA373901	sample_description	reviewer_note	yes	Liver	
+MMC2-04058	2	PRJNA379878; PRJNA517056; PRJNA574485	group	disease_key		Skin	
+MMC2-04074	2	PRJNA390475	sample_title; sample_description	reviewer_note	yes	Liver	
+MMC2-04077	2	PRJNA390784	sample_title; library_name	reviewer_note	yes	Infectious	
+MMC2-04080	2	PRJNA391575	experiment_title	reviewer_note	yes	Oral	
+MMC2-04099	2	PRJNA407815	isolation_source	reviewer_note		Infectious	
+MMC2-04101	2	PRJNA412501	GROUP	disease_key		Gastrointestinal	
+MMC2-04103	2	PRJNA413615	experiment_title	reviewer_note	yes	Respiratory	
+MMC2-04106	2	PRJNA414455	host_disease	reviewer_note		Respiratory	
+MMC2-04127	2	PRJNA428805	sample_title	reviewer_note	yes	Respiratory	
+MMC2-04131	2	PRJNA433269	sample_description	reviewer_note	yes	Metabolic	
+MMC2-04139	2	PRJNA439281	hiv_status	disease_key		Infectious	
+MMC2-04156	2	PRJNA46337	study disease	disease_key		Gastrointestinal	
+MMC2-04185	2	PRJNA486782	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04191	2		sample_alias	reviewer_note	yes	Neurodegenerative	
+MMC2-04192	2	PRJNA489760; PRJNA554111; PRJNA633959; PRJNA734525; PRJNA792014	host_disease	disease_key		Infectious	
+MMC2-04210	2	PRJNA504921; PRJNA506811	sample_alias; BJ_UC	reviewer_note	yes	Gastrointestinal	yes
+MMC2-04224	2	PRJNA511372; PRJNA511382	library_name	reviewer_note	yes	Gastrointestinal	yes
+MMC2-04244	2	PRJNA521398	disease	disease_key		Healthy	yes
+MMC2-04271	2	PRJNA532496	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-04283	2	PRJNA540738	sample_alias	reviewer_note	yes	Liver	
+MMC2-04317	2	PRJNA55453; PRJNA554535	sample_title	reviewer_note	yes	Metabolic	
+MMC2-04323	2	PRJNA556341	host_disease	disease_key		Infectious	
+MMC2-04324	2	PRJNA558378; PRJNA558911	gastrointest_disord	reviewer_note		Healthy	yes
+MMC2-04329	2	PRJNA562467	experiment_title	reviewer_note	yes	Healthy	yes
+MMC2-04330	2	PRJNA564282	experiment_title	reviewer_note	yes	Infectious	
+MMC2-04333	2	PRJNA565173	sample_title	reviewer_note	yes	Neurodegenerative	
+MMC2-04344	2	PRJNA575641	experiment_title	reviewer_note	yes	Oral	
+MMC2-04380	2	PRJNA595703	sample_description	reviewer_note	yes	Respiratory	
+MMC2-04383	2	PRJNA596209	infection_status	disease_key		Infectious	
+MMC2-04385	2	PRJNA596902	Group	disease_key		Respiratory	
+MMC2-04397	2	PRJNA605031	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04400	2	PRJNA605805	sample_alias	reviewer_note	yes	Autoimmune	
+MMC2-04406	2	PRJNA607849	experiment_title	reviewer_note	yes	Metabolic	
+MMC2-04408	2	PRJNA608440	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-04418	2	PRJNA612439	sample_title	reviewer_note	yes	Infectious	
+MMC2-04433	2	PRJNA615630	pre_LTx_diagnosis	disease_key		Respiratory	
+MMC2-04454	2	PRJNA626062	sample_alias	reviewer_note	yes	Metabolic	
+MMC2-04457	2	PRJNA629055	sample_alias	reviewer_note	yes	Autoimmune	
+MMC2-04466	2	PRJNA633161	sample_alias	reviewer_note	yes	Healthy	yes
+MMC2-04472	2	PRJNA636012	host	reviewer_note		Gastrointestinal	
+MMC2-04489	2	PRJNA639330	host_disease	disease_key		Infectious	
+MMC2-04501	2	PRJNA644520	Biofilm_status	disease_key		Gastrointestinal	
+MMC2-04510	2	PRJNA646010	sample_alias; experiment_title	reviewer_note	yes	Metabolic	
+MMC2-04515	2	PRJNA647685	Group_Cat	disease_key		Reproductive	
+MMC2-04547	2	PRJNA663629; PRJNA663631	not applicable	reviewer_note		Healthy	yes
+MMC2-04549	2	PRJNA663926	host_disease	disease_key		Infectious	
+MMC2-04566	2	PRJNA669650	health_state	disease_key		Metabolic	
+MMC2-04576	2	PRJNA674841	host_disease	disease_key		Gastrointestinal	
+MMC2-04586	2	PRJNA678695	status	disease_key		Respiratory	
+MMC2-04591	2	PRJNA679275	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04600	2	PRJNA681631	hepaticsteatosis	reviewer_note		Metabolic	
+MMC2-04633	2	PRJNA689961	sample_title	reviewer_note	yes	Respiratory	
+MMC2-04640	2	PRJNA691455	isolation_source	reviewer_note		Infectious	
+MMC2-04651	2	PRJNA695425	host_disease	reviewer_note		Cancer	
+MMC2-04656	2	PRJNA699976	disease	disease_key		Respiratory	
+MMC2-04664	2	PRJNA701870	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04679	2	PRJNA707350	sample_title	reviewer_note	yes	Respiratory	
+MMC2-04682	2	PRJNA712952	sample_title	reviewer_note	yes	Oral	
+MMC2-04692	2	PRJNA717644	glucose_tolerance_status	disease_key		Metabolic	
+MMC2-04699	2	PRJNA720904	sample_title	reviewer_note	yes	Respiratory	
+MMC2-04705	2	PRJNA725075	sample_title	reviewer_note	yes	Oral	
+MMC2-04709	2	PRJNA726205	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-04734	2	PRJNA735699	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04758	2	PRJNA745947	host_disease	disease_key		Healthy	yes
+MMC2-04768	2	PRJNA747877	sample_alias	reviewer_note	yes	Respiratory	yes
+MMC2-04773	2	PRJNA748666	Asthma status	disease_key		Respiratory	
+MMC2-04834	2	PRJNA767207	therapeutic_group	disease_key		Gastrointestinal	
+MMC2-04854	2	PRJNA777915	SarsCov2	reviewer_note		Respiratory	
+MMC2-04858	2	PRJNA778253	host_disease	disease_key		Gastrointestinal	
+MMC2-04865	2	PRJNA779930	sample_title	reviewer_note	yes	Metabolic	
+MMC2-04917	2	PRJNA800368	host_phenotype	disease_key		Respiratory	
+MMC2-04927	2	PRJNA801862	sample_alias	reviewer_note	yes	Respiratory	yes
+MMC2-04992	2	PRJNA824324	host_disease	disease_key		Infectious	
+MMC2-04999	2	PRJNA830485	host_disease	disease_key		Respiratory	
+MMC2-05014	2	PRJNA835723	sample_alias	reviewer_note	yes	Renal	
+MMC2-05055	2	PRJNA853174	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-05062	2	PRJNA856701	sample_title	reviewer_note	yes	Skin	
+MMC2-05068	2	PRJNA859805	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-05074	2	PRJNA861252	host_disease	disease_key		Oral	
+MMC2-05078	2	PRJNA861712	sample_alias	reviewer_note	yes	Respiratory	
+MMC2-05099	2	PRJNA874826	HIVStatus	reviewer_note		Respiratory	
+MMC2-05108	2	PRJNA880407	sample_title	reviewer_note	yes	Infectious	
+MMC2-05160	2	PRJNA901061	sample_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-05162	2	PRJNA901399	library_name	reviewer_note	yes	Respiratory	
+MMC2-05200	2	PRJNA914884	RSV_hc	reviewer_note		Respiratory	
+MMC2-05213	2	PRJNA924527	disease	disease_key		Endocrine	
+MMC2-05240	2	PRJNA934596	host_disease	disease_key		Reproductive	
+MMC2-05311	2	PRJNA961636	group	disease_key		Metabolic	
+MMC2-05327	2	PRJNA976251	library_name	reviewer_note	yes	Liver	
+MMC2-05378	2	PRJNA238348; PRJNA391236; SRP009299; SRP012422	condition; host_disease	disease_key		Liver	
+MMC2-05383	2	PRJNA213037	sample_alias	reviewer_note	yes	Autoimmune	
+MMC2-05385	2	PRJNA214416	phenotype	disease_key		Gastrointestinal	
+MMC2-05387	2	PRJNA224948	Feature	reviewer_note		Oral	
+MMC2-05399	2	PRJNA253517	host_disease	disease_key		Oral	
+MMC2-05411	2	PRJNA248613	host_disease	disease_key		Oral	
+MMC2-05415	2	PRJNA271691; PRJNA437984	sample_description	reviewer_note	yes	Respiratory	
+MMC2-05417	2	PRJNA276495	HealthStatus	disease_key		Respiratory	
+MMC2-05420	2	SRP057027	Disease	disease_key		Gastrointestinal	
+MMC2-05428	2	PRJNA287742	run_alias	reviewer_note	yes	Gastrointestinal	
+MMC2-05443	2	PRJNA304689	host_disease	disease_key		Infectious	
+MMC2-05463	2	PRJNA326866	host_disease	disease_key		Metabolic	
+MMC2-05476	2	PRJNA350676	sample_description	reviewer_note	yes	Immune Complications	
+MMC2-05489	2	PRJNA388707	experiment_title	reviewer_note	yes	Respiratory	
+MMC2-05505	2	PRJNA422983	host disease	disease_key		Liver	
+MMC2-05511	2	PRJNA431746	sample_title	reviewer_note	yes	Healthy	yes
+MMC2-05614	2	PRJNA1229860	sample group	disease_key		Infectious	
+MMC2-05651	2	PRJNA895690	sample_title	reviewer_note	yes	Reproductive	
+MMC2-05656	2	PRJNA894713	HIV:	disease_key		Infectious	
+MMC2-05669	2		sample_title	reviewer_note	yes	Respiratory	
+MMC2-05674	2	PRJNA766806	vaginal_status	disease_key		Infectious	
+MMC2-05680	2	PRJNA756767	sample_alias	reviewer_note	yes	Healthy	yes
+MMC2-05693	2	PRJNA691964	host_disease	disease_key		Infectious	
+MMC2-05724	2	PRJNA566293	CT_infection_status	disease_key		Infectious	
+MMC2-05727	2	PRJEB32479	Feature	reviewer_note		Healthy	yes
+MMC2-05735	2	PRJNA473351	hpv:	disease_key		Infectious	
+MMC2-05741	2	PRJNA417968	ControlOrBV	reviewer_note		Reproductive	
+MMC2-07030	2	ERR1008629; ERR1008631; ERR1008632; ERR1008633; ERR1008651; ERR1008668; ERR1008687; ERR1008707; ERR1008723; ERR1008739; ERR1008749; ERR1008753; ERR1008757; ERR1008760; ERR1008770; ERR1008771; ERR1008776; ERR1008782; ERR1008793; ERR1015282; ERR1015295; ERR1015296; ERR1015297; ERR1015299; ERR1015307; ERR1015309; ERR1015311; ERR1015312; ERR1015316; ERR1015318; ERR1015322; ERR1015323; ERR1023629; ERR1023630; ERR1023633; ERR1023634; ERR1023638; ERR1023639; ERR1023640; ERR1023642; ERR1023644; ERR1023645; ERR1023646; ERR1023647; ERR1023650; ERR1023651; ERR1023652; ERR1023653; ERR1023654; ERR1023655; ERR1023656; ERR1023658; ERR1023659; ERR1023660; ERR1023663; ERR1023664; ERR1023666; ERR1023667; ERR1023668; ERR1023669; ERR1023670; ERR1023675; ERR1023676; ERR1023677; ERR1023678; ERR1023680; ERR1023681; ERR1023682; ERR1023683; ERR1023687; ERR1023688; ERR1023689; ERR1023690; ERR1023692; ERR1023693; ERR1023694; ERR1023695; ERR1023696; ERR1023697; ERR1023698; ERR1023699; ERR1023702; ERR1023703; ERR1023704; ERR1023705; ERR1023711; ERR1023738; ERR1023741; ERR1023758; ERR1023784; ERR1023785; ERR1023794; ERR1023800; ERR1023807; ERR1023811; ERR1023820; ERR1023834; ERR1023837; ERR1023841; ERR1023845; ERR1023846; ERR1023849; ERR1023857; ERR1035981; ERR1035984; ERR1035990; ERR1215618; ERR1215619; ERR1215620; ERR1215621; ERR1215633; SRR5082444; SRR5082445; SRR5082446; SRR5082447; SRR5082448; SRR5082449; SRR5082450; SRR5082451; SRR5082452; SRR5082453; SRR5082454; SRR5082455; SRR5082456; SRR5082457; SRR5082458; SRR5082459; SRR5082460; SRR5082461; SRR5082462; SRR5082463; SRR5082464; SRR5082465; SRR5082466; SRR5082467; SRR5082468; SRR5082469; SRR5082471; SRR5082472; SRR5082474; SRR5082475; SRR5082476; SRR5082477; SRR5082481; SRR5082483; SRR5082485; SRR5082486; SRR5082487; SRR5082489; SRR5082490; SRR5082491	host_disease; host_status	disease_key		Respiratory	
+MMC2-07328	2	SRP034607	sample_description	reviewer_note	yes	Infectious	
+MMC2-08436	2	PRJNA714459	group	disease_key		Respiratory	
+MMC2-08464	2	PRJEB67362	sample_description	reviewer_note	yes	Infectious	
+MMC2-08539	2	PRJNA1189347	sample_alias	reviewer_note	yes	Autoimmune	
+MMC2-08621	2	PRJNA1051186	host_disease	disease_key		Respiratory	
+MMC2-08697	2	PRJNA549764	group	disease_key		Infectious	
+MMC2-08827	2	10.5281/ZENODO.4288679; PRJEB44737	sample_description	reviewer_note	yes	Infectious	
+MMC2-09068	2	10.6084/M9.FIGSHARE.13199420; 10.6084/M9.FIGSHARE.13199687; 10.6084/M9.FIGSHARE.13851554; PRJNA637490	sample_description	reviewer_note	yes	Metabolic	
+MMC2-09644	2	PRJNA417357; PRJNA715601	asthma_mother; ashtma_5yr	disease_key		Respiratory	
+MMC2-09774	2	PRJEB5185	sample_description	reviewer_note	yes	Infectious	
+MMC2-09970	2		sample_alias	reviewer_note	yes	Metabolic	
+MMC2-09980	2	PRJNA780174	host_disease	disease_key		Infectious	
+MMC2-10072	2		sample_alias	reviewer_note	yes	Infectious	
+MMC2-10156	2	PRJNA1036152	sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-10300	2		sample_description	reviewer_note	yes	Infectious	
+MMC2-10320	2		sample_alias; sample_title	reviewer_note	yes	Gastrointestinal	
+MMC2-10331	2	10.6084/M9.FIGSHARE.9989216; PRJNA525585	daily SynGut treatment data point:	disease_key		Metabolic	
+MMC2-10356	2	PRJEB44737; PRJEB64621	sample_description	reviewer_note	yes	Infectious	
+MMC2-10376	2		sample_alias	reviewer_note	yes	Infectious	
+MMC2-10466	2		env_local_scale	reviewer_note		Mental Health	
+MMC2-10511	2	PRJNA257186	gastrointest_disord:	disease_key		Gastrointestinal	
+MMC2-10567	2		sample_alias	reviewer_note	yes	Respiratory	
+MMC2-10649	2		host	reviewer_note		Respiratory	
+MMC2-10670	2		host_disease	disease_key		Metabolic	
+MMC2-10672	2		isolation_source	reviewer_note		Skin	
+MMC2-10737	2		host_disease	disease_key		Autoimmune	
+MMC2-10777	2		atopy	reviewer_note		Immune Complications	
+MMC2-10779	2		host_disease	disease_key		Respiratory	
+MMC2-10820	2		library_name	reviewer_note	yes	Infectious	
+MMC2-10871	2		sample_title	reviewer_note	yes	Liver	
+MMC2-10882	2	PRJNA1101448	sample_description	reviewer_note	yes	Respiratory	
+MMC2-11047	2	PRJNA504944	host_disease	disease_key		Respiratory	
+MMC2-11220	2	PRJEB66493	sample_description	reviewer_note	yes	Gastrointestinal	yes
+MMC2-12417	2	PRJNA1377879	host_disease	disease_key		Infectious	
+MMC2-12544	2	PRJNA1137153	nugent_status	disease_key		Reproductive	
+MMC2-12608	2	PRJNA849603	host_disease	disease_key		Gastrointestinal	
+MMC2-12673	2	PRJEB48940	blood_group	disease_key		Reproductive	
+MMC2-12714	2	PRJNA826539	sample_title	reviewer_note	yes	Infectious	
+MMC2-12734	2	PRJNA674451	sample_alias	reviewer_note	yes	Infectious	
+MMC2-12794	2	PRJNA699990	sample_alias	reviewer_note	yes	Infectious	
+MMC2-12827	2	PRJNA668516	hiv_status	disease_key		Infectious	
+MMC2-12894	2	PRJNA523312	host_infection	disease_key		Infectious	
+MMC2-12967	2	PRJNA392046	sample_title	reviewer_note	yes	Infectious	
+MMC2-12989	2	PRJEB11895; PRJEB12577	feature	reviewer_note		Reproductive	
+MMC2-00149	3	PRJEB39809	treatment; host	reviewer_note		Cancer	
+MMC2-00234	3	PRJEB80483	host_disease; host_disease_stat; host_disease_status	reviewer_note		Cancer	
+MMC2-00235	3	GSE138485; PRJEB8708; PRJNA576155	sample_title; HCC_diagnosis	reviewer_note	yes	Cancer	
+MMC2-00303	3	PRJNA1111965	sample_title	reviewer_note	yes	Cancer	yes
+MMC2-00421	3	PRJNA526861	experiment_title	reviewer_note	yes	Cancer	
+MMC2-00476	3	PRJNA673212	Fit_test_result	reviewer_note		Cancer	
+MMC2-00534	3	PRJNA784025	sample_alias; healthy	reviewer_note	yes	Cancer	yes
+MMC2-00548	3	PRJNA81; PRJNA811494	NAMED_IN_NOTE_UNPARSED	reviewer_note		Cancer	
+MMC2-01382	3	PRJEB62655; PRJNA1114406; PRJNA662100; PRJNA791834; PRJNA873789; PRJNA997108	diabetes_status; emp_status; host_disease; host_health_state	disease_key	yes	Cancer	
+MMC2-01558	3	PRJNA946762	host_disease	disease_key		Cancer	
+MMC2-01893	3	PRJNA1069753	gynecologic_disord	reviewer_note	yes	Cancer	
+MMC2-02072	3	PRJNA646610	sample_alias	reviewer_note	yes	Metabolic	
+MMC2-02124	3	DRA010810	host_disease_stat	disease_key		Mental Health	
+MMC2-02173	3	PRJNA553560	VFDandAlive; APACHE_IV_Score; SOFA_total	reviewer_note		Respiratory	
+MMC2-02179	3	PRJNA518155	library_name	reviewer_note	yes	Infectious	yes
+MMC2-02185	3	PRJNA454892	sample_description; patient	reviewer_note	yes	Infectious	
+MMC2-02242	3	PRJEB14731	host disease status	disease_key		Respiratory	
+MMC2-02487	3	PRJNA1088255	host_disease	disease_key		Mental Health	
+MMC2-02719	3	PRJEB34394	placeofbirth_group	disease_key		Metabolic	
+MMC2-02782	3	PRJEB101152	host_health_state	reviewer_note		Gastrointestinal	
+MMC2-02797	3	PRJEB12006	sample_title; sample_description	reviewer_note	yes	Respiratory	
+MMC2-02824	3	PRJEB14050; PRJEB22175	host_status	disease_key		Respiratory	
+MMC2-02828	3	PRJEB14304	lung/pulmonary disorder	disease_key		Respiratory	
+MMC2-02872	3	PRJEB21593; PRJNA607176	host_phenotype	disease_key		Gastrointestinal	
+MMC2-02917	3	PRJEB26773	disorder	reviewer_note		Respiratory	
+MMC2-02973	3	PRJEB32062	lung/pulmonary disorder	disease_key		Respiratory	
+MMC2-02990	3	PRJEB33603	gastrointestinal tract disorder	disease_key		Gastrointestinal	
+MMC2-03154	3	PRJEB48670	unclear	reviewer_note		Metabolic	
+MMC2-03260	3	PRJEB62041	sample group	disease_key		Gastrointestinal	
+MMC2-03343	3	PRJEB8060	lung/pulmonary disorder	disease_key		Respiratory	
+MMC2-03371	3	PRJEB88699	sample_description	reviewer_note	yes	Metabolic	
+MMC2-03438	3	PRJNA1025259	sample_title	reviewer_note	yes	Infectious	
+MMC2-03459	3	PRJNA1040967; PRJNA926124	host_disease	disease_key		Respiratory	
+MMC2-03755	3	PRJNA1188732	sample_alias	reviewer_note	yes	Infectious	
+MMC2-03794	3	PRJNA1209112	library_name	reviewer_note	yes	Immune Complications	
+MMC2-03847	3	PRJNA1249378	sample_alias	reviewer_note	yes	Healthy	yes
+MMC2-03973	3	PRJNA296814; PRJNA695570	host_disease_stat	disease_key		Mental Health	
+MMC2-04054	3	PRJNA378341; PRJNA438491; PRJNA529352	library_name	reviewer_note	yes	Metabolic	
+MMC2-04132	3	PRJNA434249	library_name	reviewer_note	yes	Healthy	yes
+MMC2-04213	3	PRJNA508385; PRJNA552294	library_name	reviewer_note	yes	Oral	
+MMC2-04259	3	PRJNA528960	host_disease	disease_key		Infectious	
+MMC2-04296	3	PRJNA544721	sample_alias; experiment_title	reviewer_note	yes	Gastrointestinal	
+MMC2-04558	3	PRJNA667318	sample_alias	reviewer_note	yes	Cancer	
+MMC2-04785	3	PRJNA752445; PRJNA801894; PRJNA832071; PRJNA866322	sample_alias	reviewer_note	yes	Renal	
+MMC2-04791	3	PRJNA754005	host_disease	reviewer_note		Respiratory	
+MMC2-04806	3	GSE183154; PRJNA759926	sample_alias; very	reviewer_note	yes	Autoimmune	
+MMC2-05146	3	PRJNA895096	drag	reviewer_note		Healthy	yes
+MMC2-05274	3	PRJNA946338	host_disease	disease_key		Respiratory	
+MMC2-05335	3	PRJNA980385; PRJNA980412	host	reviewer_note		Metabolic	
+MMC2-12437	3	PRJEB46659; PRJNA725416	sample_description	reviewer_note	yes	Reproductive	
+MMC2-12752	3	PRJNA735440	sample_title; title	reviewer_note	yes	Infectious	
+MMC2-06709	4		http	reviewer_note		Autoimmune	
+MMC2-10489	4		sample_alias	reviewer_note	yes	Gastrointestinal	

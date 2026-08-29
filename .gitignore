@@ -1,0 +1,8 @@
+ena/
+cache/
+fastq/
+sample_labels.tsv
+*.part
+__pycache__/
+*.pyc
+.DS_Store
