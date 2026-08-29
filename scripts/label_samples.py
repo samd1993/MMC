@@ -36,18 +36,19 @@ CONTROL = re.compile(
 SURVEY_NEG = re.compile(r"i do not have this condition|^\s*(no|never|false)\s*$", re.I)
 SURVEY_POS = re.compile(r"diagnosed by|^\s*(yes|true)\s*$", re.I)
 SURVEY_UNSURE = re.compile(r"self[- ]?diagnosed|unspecified|not sure", re.I)
-# Two different things that both look like "empty". Keeping them apart is the
-# whole point: MISSING means nobody recorded anything; ABSENT means somebody
-# recorded that the condition is not present, which is a healthy control.
-# The published harmonized file folds ABSENT into MISSING and then fills the
-# blank with the study's disease -- 1,678 samples in 19 studies are labelled
-# with a disease their own record denies. Do not repeat that here.
-MISSING = {"", "na", "n/a", "not collected", "not provided", "missing",
-           "unknown", "nan", "-", "null", "not available", "unspecified",
-           "not specified", "not determined"}
-ABSENT = {"none", "no", "not applicable", "absent", "not present", "nil",
-          "negative", "n", "0", "false"}
-NULLISH = MISSING
+# Three things that all look like "empty", and keeping them apart is the whole
+# point. Same split as build_sample_master.py upstream, so labels agree.
+#   MISSING        nobody recorded anything
+#   UNINFORMATIVE  somebody recorded "we don't know" -- still not healthy
+#   ABSENT         somebody recorded that the condition is NOT there -> control
+MISSING = {"", "not specified", "not determined"}
+UNINFORMATIVE = {"not applicable", "unknown", "not collected", "not provided",
+                 "missing", "na", "n/a", "not available", "unspecified", "nan",
+                 "-", "null"}
+ABSENT = {"none", "no", "absent", "not present", "nil", "negative", "n", "0",
+          "false", "no disease", "non"}
+# A negatively-phrased field inverts: `is_healthy = no` is a CASE.
+HEALTH_FIELD = re.compile(r"^\s*(is[_ ]?)?health(y|_?status|_?state)?\s*$", re.I)
 
 AGE_FIELDS = ["host_age", "age", "host age", "age_years", "host_age_years"]
 SEX_FIELDS = ["host_sex", "sex", "gender", "host sex", "host_gender"]
@@ -63,7 +64,8 @@ def pick(row, names):
     for n in names:
         k = idx.get(norm(n))
         if k and str(row[k]).strip() and str(row[k]).strip().lower() not in MISSING:
-            # note MISSING, not MISSING|ABSENT -- "none" is a real answer
+            # MISSING only -- "none" and "not applicable" are real answers and
+            # the caller needs to see which one was written
             return str(row[k]).strip(), k
     return "", ""
 
@@ -72,6 +74,13 @@ def classify(value, field, free_text):
     v = value.strip().lower()
     if not v or v in MISSING:
         return "unknown", "no_value"
+    if v in UNINFORMATIVE:
+        return "unknown", "uninformative_value"
+    if HEALTH_FIELD.match(str(field)):
+        if v in ABSENT:
+            return "disease", "health_field_negated"
+        if v in {"yes", "true", "1"}:
+            return "healthy", "health_field_affirmed"
     if v in ABSENT:
         return "healthy", "explicit_absence"
     if SURVEY_NEG.search(value):
@@ -98,6 +107,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ena", default="ena", help="output dir of fetch_ena_metadata.py")
     ap.add_argument("--map", default=os.path.join(here, "data", "disease_field_map.tsv"))
+    ap.add_argument("--tier", default="", help="comma-separated tiers to keep")
     ap.add_argument("-o", "--out", default="sample_labels.tsv")
     args = ap.parse_args()
 
@@ -107,8 +117,11 @@ def main():
         sys.exit(f"missing {runs_p} -- run fetch_ena_metadata.py first")
 
     # study accession -> the studies that cite it, and their disease field
+    tiers = {t.strip() for t in args.tier.split(",") if t.strip()}
     by_acc = {}
     for r in read_tsv(args.map):
+        if tiers and r.get("tier") not in tiers:
+            continue
         for a in [x.strip() for x in r["accession_codes"].split(";") if x.strip()]:
             by_acc.setdefault(a, []).append(r)
 

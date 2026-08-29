@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pull ENA run + sample metadata (including fastq URLs) for a list of accessions.
 
-    python3 scripts/fetch_ena_metadata.py data/accessions_tier1_tier2.txt
+    python3 scripts/fetch_ena_metadata.py data/accessions.tsv --tier 1,2
 
 Two stages, both cached under cache/ so the run is resumable:
 
@@ -111,9 +111,37 @@ def fetch_attrs(batch):
     return out, None
 
 
+def read_accessions(path, tier_filter=""):
+    """accessions.tsv (accession/record_id/tier) or a bare one-per-line list."""
+    tiers = {t.strip() for t in tier_filter.split(",") if t.strip()}
+    lines = [l.rstrip("\n") for l in open(path, encoding="utf8") if l.strip()]
+    if not lines:
+        return []
+    head = lines[0].split("\t")
+    if "accession" not in head:
+        if tiers:
+            print("  note: --tier ignored, this file has no tier column")
+        return sorted({l.strip() for l in lines})
+    ai, ti = head.index("accession"), (head.index("tier") if "tier" in head else None)
+    out = set()
+    for l in lines[1:]:
+        f = l.split("\t")
+        if len(f) <= ai:
+            continue
+        if tiers and ti is not None and (f[ti] if len(f) > ti else "") not in tiers:
+            continue
+        out.add(f[ai].strip())
+    return sorted(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("accessions", help="one accession per line")
+    ap.add_argument("accessions",
+                    help="data/accessions.tsv, or any file with one accession "
+                         "per line")
+    ap.add_argument("--tier", default="",
+                    help="comma-separated tiers to keep, e.g. 1,2 "
+                         "(only meaningful for accessions.tsv)")
     ap.add_argument("-o", "--outdir", default="ena")
     ap.add_argument("--cache", default="cache")
     ap.add_argument("--skip-attributes", action="store_true")
@@ -121,7 +149,7 @@ def main():
 
     os.makedirs(os.path.join(args.cache, "runs"), exist_ok=True)
     os.makedirs(args.outdir, exist_ok=True)
-    accs = [l.strip() for l in open(args.accessions, encoding="utf8") if l.strip()]
+    accs = read_accessions(args.accessions, args.tier)
     fields = valid_fields()
     print(f"Stage A: {len(accs)} accessions, {len(fields)} fields")
 

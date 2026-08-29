@@ -27,44 +27,47 @@ makes this corpus labellable at scale.
 ## Quick start
 
 ```bash
-python3 scripts/fetch_ena_metadata.py data/accessions_tier1_tier2.txt -o ena
+python3 scripts/fetch_ena_metadata.py data/accessions.tsv --tier 1,2 -o ena
 ```
 ```bash
-python3 scripts/label_samples.py --ena ena -o sample_labels.tsv
+python3 scripts/label_samples.py --ena ena --tier 1,2 -o sample_labels.tsv
 ```
 ```bash
 python3 scripts/download_fastq.py sample_labels.tsv --label disease,healthy --dry-run
 ```
 
-Stage 1 takes a few hours for the full Tier 1+2 list (783 project accessions,
-~187k samples) and is cached and resumable — kill it and rerun. Stage 3 always
-reports the byte total before it moves anything; drop `--dry-run` when the
-number looks sane. Python 3.9+, standard library only for the fetch and
-download; `pandas` for the data files.
+Drop `--tier` to take the whole corpus. Stage 1 takes a few hours for Tier 1+2
+(783 project accessions, ~187k samples) and is cached and resumable — kill it
+and rerun. Stage 3 always reports the byte total before it moves anything; drop
+`--dry-run` when the number looks sane. Python 3.9+, standard library only for
+fetch and download; `pandas` to read the data files.
 
 ---
 
 ## What is in `data/`
 
+Four files. **Tier is a column, never a filename** — filter, don't switch files.
+
 | file | rows | what it is |
 |---|---|---|
+| `samples.tsv.gz` | 371,509 | **the master.** One row per sample per citing study, all tiers, disease mapped to MONDO with DOID/MeSH xrefs, plus host age and sex |
 | `studies.tsv` | 3,146 | every screened study: tier, accessions, disease field, body site, sequencing type, country |
 | `disease_field_map.tsv` | 569 | study → the metadata field carrying per-sample disease. **Start here.** |
-| `samples_tier1_tier2.tsv.gz` | 186,673 | one row per deposited sample, disease mapped to MONDO with DOID/MeSH xrefs, plus host age and sex |
-| `accessions_tier1_tier2.txt` | 783 | INSDC project accessions with per-sample disease annotation |
-| `accessions_tier3.txt` | 671 | valid deposits with **no** per-sample annotation — reads are usable, labels are not |
+| `accessions.tsv` | 1,568 | `accession` / `record_id` / `tier` — one list, filterable |
 
 ### The tiers
 
-| tier | studies | samples in repo | meaning |
-|---|---|---|---|
-| **1** | 185 | 95,187 | per-sample disease **and** host age **and** sex in the repository |
-| **2** | 380 | 91,946 | per-sample disease recoverable, from a field or an informative sample name |
-| **3** | 607 | 185,115 | valid accession, unique sample IDs, **no** per-sample biology |
-| **4** | 1,974 | — | no accession, or an accession whose samples don't differentiate |
+| tier | studies | studies with a resolvable deposit | sample rows | meaning |
+|---|---|---|---|---|
+| **1** | 185 | 176 | 94,947 | per-sample disease **and** host age **and** sex in the repository |
+| **2** | 380 | 349 | 91,941 | per-sample disease recoverable, from a field or an informative sample name |
+| **3** | 607 | 554 | 184,572 | valid accession, unique sample IDs, **no** per-sample biology |
+| **4** | 1,974 | 14 | 49 | no accession, or samples that don't differentiate. Nothing to fetch. |
 
 Tiers 1 and 2 are the labellable corpus. Tier 3 is where you go if you need more
-reads and are willing to supply labels another way. Tier 4 has nothing to fetch.
+reads and are willing to supply labels another way — its rows are in the master
+with `mapping_method = tier3_no_annotation`, carrying run accession, library
+strategy and platform but no disease.
 
 Of the 565 Tier 1+2 studies, **236 have `disease_field_is_free_text = yes`** —
 the label is inside a sample alias, title or description, or in a coded column
@@ -94,8 +97,10 @@ host_age  host_sex  fastq_ftp  fastq_bytes
 | `control_value` | the value matched the control vocabulary (`healthy`, `HC`, `NC`, …) |
 | `survey_response_negative` | questionnaire cohort; the subject answered no |
 | `survey_response_positive:<field>` | questionnaire cohort; the **field name** is the condition |
+| `health_field_negated` | `is_healthy = no` → a **case**, not a control |
 | `healthy_cohort_study` | the whole study is healthy participants |
 | `free_text_or_coded_field` | the label is in a name or a code — parse it yourself |
+| `uninformative_value` | the record says "not applicable"/"unknown". **Not** healthy. |
 | `no_value` | nothing recorded. **Not** healthy. |
 
 ---
@@ -104,25 +109,25 @@ host_age  host_sex  fastq_ftp  fastq_bytes
 
 Long version in [`docs/CAVEATS.md`](docs/CAVEATS.md). The four that will bite you:
 
-1. **Missing ≠ healthy.** A sample with no disease value is `unknown`. Folding
-   those into the control arm is the fastest way to a meaningless model.
+1. **Missing ≠ healthy, and "not applicable" ≠ healthy.** Both come back
+   `unknown`. Folding them into the control arm is the fastest way to a
+   meaningless model.
 
-2. **Half the MONDO terms in `samples_tier1_tier2.tsv` are study-level.**
-   `mapping_method` is the column that tells you: only **8.8%** of rows are
-   `sample_value_exact` — the disease read off the sample itself. **54.1%** are
-   `study_mesh_heading*`, meaning the study's own MeSH disease heading was
-   broadcast to every sample in it. That is a much weaker claim. Filter on
-   `mapping_method` before you use `mondo_id` as ground truth.
+2. **Most MONDO terms are study-level, not per-sample.** `mapping_method` is the
+   column that tells you. Over the Tier 1+2 rows, only **8.4%** are
+   `sample_value_exact` — the disease read off the sample itself — against
+   **52%** `study_mesh_heading*`, where the study's own MeSH heading was
+   broadcast to every sample in it. Filter on `mapping_method` before you use
+   `mondo_id` as ground truth.
 
-3. **Samples are double-counted across studies.** 186,673 rows cover 174,812
-   distinct sample accessions: 40 project accessions are cited by more than one
-   paper, usually a re-analysis alongside the original. Deduplicate on
-   `sample_accession`, not on row count, before computing anything.
+3. **Samples are double-counted across studies.** 371,509 rows cover 348,692
+   distinct sample accessions: some project accessions are cited by more than
+   one paper, usually a re-analysis alongside the original. Deduplicate on
+   `sample_accession`, not on row count.
 
 4. **A study's sample count is the whole BioProject**, not what the paper
    analysed. Where both numbers exist, the repository holds a median 2–3.5×
-   more samples than the paper's own stated *n*, because papers cite the
-   projects they reused as well as the one they deposited.
+   more samples than the paper's own stated *n*.
 
 ---
 
@@ -136,7 +141,8 @@ a reviewer's "no" is a statement about **disease**; host age and sex were
 verified correct ~99% of the time and were trusted.
 
 Upstream working directory is `MMC/MMC2_resubmission/` (not public). Regenerate
-this data pack with `scripts/export_collaborator_repo.py` there.
+the master with `build_sample_master.py` there, then this data pack with
+`export_collaborator_repo.py`.
 
 Questions on the curation → Sam Degregori. Questions on a specific study → check
 its `reviewer_notes` in the upstream master before assuming the field is wrong.
