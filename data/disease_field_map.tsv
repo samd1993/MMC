@@ -68,7 +68,6 @@ MMC2-03222	1	PRJEB55787	active uveitis	disease_key		Gastrointestinal
 MMC2-03242	1	PRJEB58436; PRJNA417579	Cardiometabolic_status	disease_key		Metabolic	
 MMC2-03248	1	PRJEB59350; PRJNA834801	Case_status	disease_key		Neurodegenerative	
 MMC2-03262	1	PRJEB62577; PRJEB62655	emp_status	disease_key		Healthy	yes
-MMC2-03277	1	PRJEB6456; PRJNA475246; PRJNA486782; PRJNA510445; PRJNA521878; PRJNA630999; PRJNA698986	health_state	disease_key		Healthy	yes
 MMC2-03322	1	PRJEB75958	host disease status	disease_key		Infectious	
 MMC2-03403	1	PRJNA1011244	disease	disease_key		Autoimmune	
 MMC2-03412	1	PRJNA1014361	sample_description	reviewer_note	yes	Respiratory	
@@ -173,7 +172,6 @@ MMC2-11206	1	PRJEB47047	severity	reviewer_note		Reproductive
 MMC2-11252	1	PRJNA316126; PRJNA539959; PRJNA548310	Host_disease_status; host_disease	disease_key		Respiratory	
 MMC2-12620	1	PRJNA836344	sample_description	reviewer_note	yes	Reproductive	
 MMC2-12782	1	GSE86491; PRJEB14941; PRJEB16013; PRJEB24147; PRJNA295859; PRJNA481576; PRJNA547595; PRJNA737052	nourishment_status_group; primary_pathology	disease_key		Immune Complications	
-MMC2-ADD-001	1	PRJEB11419	skin_condition	disease_key		Healthy	yes
 MMC2-00101	2	DRA017480	sample_title	reviewer_note	yes	Cancer	
 MMC2-00138	2	PRJEB1415	sample_description	reviewer_note	yes	Cancer	
 MMC2-00158	2	PRJDB12280	sample_name	reviewer_note	yes	Oral	
@@ -566,5 +564,6 @@ MMC2-05274	3	PRJNA946338	host_disease	disease_key		Respiratory
 MMC2-05335	3	PRJNA980385; PRJNA980412	host	reviewer_note		Metabolic	
 MMC2-12437	3	PRJEB46659; PRJNA725416	sample_description	reviewer_note	yes	Reproductive	
 MMC2-12752	3	PRJNA735440	sample_title; title	reviewer_note	yes	Infectious	
+MMC2-03277	4	PRJEB6456; PRJNA475246; PRJNA486782; PRJNA510445; PRJNA521878; PRJNA630999; PRJNA698986	health_state	disease_key		Healthy	yes
 MMC2-06709	4		http	reviewer_note		Autoimmune	
 MMC2-10489	4		sample_alias	reviewer_note	yes	Gastrointestinal	

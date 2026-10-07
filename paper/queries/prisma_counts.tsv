@@ -1,0 +1,22 @@
+stage	description	n
+identification	Records identified in PubMed	35220
+identification	  main query	33564
+identification	  cervicovaginal search	1656
+screening	Records after duplicates removed	23781
+screening	  excluded: duplicate records	11439
+screening	Records after title/abstract screening	17009
+screening	  excluded at title/abstract screening	6772
+screening	Records after full-text screening	13094
+screening	  excluded at full-text screening	3915
+included	Studies included in the analysis	2896
+included	  excluded at eligibility and curation	10198
+included	  excluded: deposited outside INSDC	169
+included	  excluded: healthy-cohort studies	249
+included	  excluded: non-human, duplicate deposit, withdrawn	4
+notes	Eligible records carried into the curated corpus	3318
+notes	MeSH eligibility recomputed on the screened set	3428
+notes	Rayyan-reported full-text exclusions	4110
+tiers	Tier 1	170
+tiers	Tier 2	360
+tiers	Tier 3	539
+tiers	Tier 4	1827

@@ -1,0 +1,54 @@
+Geography Included,Geography Excluded
+geo_loc_name,DiseaseLocation
+geo loc name,physical_specimen_location
+geographic_location,birth_location
+geographic location,sampling_site
+geographic location (country and/or sea),sampling site
+geographic location (country and/or sea),body_site
+geographic location (countryand/orsea),host_body_site
+geographic location (latitude),isolation_source
+geographic location (longitude),env_local_scale
+geographic location (region and locality),local_environmental_context
+geographic location (depth),tissue
+geographic location (elevation),organ
+geographicLocation,anatomical_site
+geographicallocation,collection_site
+geo_location,study_site
+country,site
+Country,Site
+COUNTRY,site_id
+country_of_origin,clinical_site
+country_of_birth,recruitment_site
+host_country,center_name
+nation,institution
+nationality,hospital
+region,library_prep_location
+Region,sequencing_location
+state,file_location
+province,
+city,
+City,
+locality,
+lat_lon,
+lat lon,
+latlon,
+latitude,
+Latitude,
+longitude,
+Longitude,
+lat,
+lon,
+latitude and longitude,
+latitudeLongitude,
+decimal_latitude,
+decimal_longitude,
+location,
+Location,
+HHS_region,
+continent,
+Continent,
+world_region,
+geo_region,
+sample_country,
+collection_country,
+origin_country,

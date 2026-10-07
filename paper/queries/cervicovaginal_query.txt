@@ -1,0 +1,33 @@
+(
+  "vaginal microbiome"[tiab] OR "vaginal microbiota"[tiab] OR
+  "vaginal microflora"[tiab] OR "vaginal flora"[tiab] OR
+  "vaginal bacteria"[tiab] OR "vaginal bacterial communit*"[tiab] OR
+  "cervical microbiome"[tiab] OR "cervical microbiota"[tiab] OR
+  "cervical microflora"[tiab] OR "cervical flora"[tiab] OR
+  "cervical bacteria"[tiab] OR "cervical bacterial communit*"[tiab] OR
+  "cervicovaginal microbiome"[tiab] OR "cervicovaginal microbiota"[tiab] OR
+  "cervicovaginal microflora"[tiab] OR "cervicovaginal flora"[tiab] OR
+  ("Vagina"[Mesh] AND ("Microbiota"[Mesh] OR "Bacteria"[Mesh])) OR
+  ("Cervix Uteri"[Mesh] AND ("Microbiota"[Mesh] OR "Bacteria"[Mesh]))
+)
+AND
+(
+  "16S rRNA"[tiab] OR "16S ribosomal RNA"[tiab] OR
+  "16S rRNA gene"[tiab] OR "16S sequencing"[tiab] OR
+  "16S amplicon"[tiab] OR "16S amplicon sequencing"[tiab] OR
+  "16S rDNA"[tiab] OR "16S gene"[tiab] OR
+  "RNA, Ribosomal, 16S"[Mesh]
+  OR
+  "shotgun sequencing"[tiab] OR "shotgun metagenom*"[tiab] OR
+  "whole genome sequencing"[tiab] OR "whole-genome sequencing"[tiab] OR
+  "metagenom*"[tiab] OR
+  "Metagenomics"[Mesh] OR "Metagenome"[Mesh] OR
+  "High-Throughput Nucleotide Sequencing"[Mesh] OR
+  "Sequence Analysis, DNA"[Mesh]
+  OR
+  "long-read sequencing"[tiab] OR "long read sequencing"[tiab] OR
+  "Nanopore sequencing"[tiab] OR "Oxford Nanopore"[tiab] OR
+  "PacBio"[tiab] OR "Pacific Biosciences"[tiab] OR
+  "SMRT sequencing"[tiab]
+)
+NOT (Animals[Mesh] NOT Humans[Mesh])
