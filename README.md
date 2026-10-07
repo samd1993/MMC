@@ -76,7 +76,9 @@ docs/                       tier definitions and caveats
   `prisma_counts.tsv` carries every count in the PRISMA flow (Figure S2).
 - **Data S1** has one row per analyzed study: tier, year, journal, DOI,
   accessions, the field holding per-sample disease, disease group, body site,
-  sequencing type, country and continent.
+  sequencing type, country and continent. For Tier 1 and 2 studies whose
+  disease label sits in prose or a field that could not be pinned down,
+  `disease_field` reads `free-text`.
 - **Data S2** has one row per sample per citing study, with disease mapped to
   MONDO (DOID and MeSH cross-references), plus host age and sex.
   `mapping_method` says whether the disease came from the sample's own record
